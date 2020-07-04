@@ -5,7 +5,7 @@ class Prediction extends Component {
     render() {
         return (
             <div className="inner-ball">
-                <div className={`triangle ${this.props.fade && "asking"}`}>
+                <div className={`${this.props.fade ? "triangle" : ""}`}>
                     <span>{this.props.result}</span>
                 </div>
             </div>
