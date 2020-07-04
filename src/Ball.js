@@ -41,7 +41,11 @@ class Ball extends Component {
             Math.floor(Math.random() * this.props.answers.length)
         ];
 
-        this.setState({ answer: result, shaking: true, fade: true });
+        this.setState({ shaking: true });
+
+        setTimeout(() => {
+            this.setState({ answer: result, fade: true });
+        }, 1000);
 
         setTimeout(() => {
             this.setState({ shaking: false });
