@@ -1,12 +1,12 @@
-* {
-    box-sizing: border-box;
+body {
+    overflow: hidden;
 }
 
 .Ball-container {
     position: relative;
     align-self: center;
     width: 35vw;
-    padding-bottom: 35%;
+    padding-bottom: 35vw;
     background-color: black;
     border-radius: 50%;
 }
@@ -18,7 +18,7 @@
 
 .question {
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .shaking {
@@ -41,7 +41,7 @@
     font-weight: 400;
     position: absolute;
     top: 60%;
-    left: 25%;
+    left: 52%;
     transform: translate(-50%, -50%);
     margin: 0;
     color: white;
@@ -64,10 +64,10 @@
     display: block;
     width: 0;
     height: 0;
-    margin-left: -500px;
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    border-bottom: 500px solid #4679bd;
+    margin-left: -150px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #4679bd;
 }
 
 @keyframes fadein {
@@ -113,10 +113,43 @@
 @media (max-width: 600px) {
     .triangle span {
         top: 65%;
-        left: 18%;
+        left: 40%;
+        font-size: 0.8rem;
     }
     .Ball-container {
-        width: 90vw;
-        padding-bottom: 90%;
+        width: 95vw;
+        padding-bottom: 95vw;
     }
 }
+
+/* @media (max-width: 768px) {
+    .triangle span {
+        top: 65%;
+        left: 53%;
+    }
+    .Ball-container {
+        width: 75vw;
+        padding-bottom: 75vw;
+    }
+} */
+
+/* @media (max-width: 984px) {
+    .triangle:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: -300px;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-bottom: 300px solid #4679bd;
+    }
+    .triangle span {
+        top: 65%;
+        left: 38%;
+    }
+    .Ball-container {
+        width: 60vw;
+        padding-bottom: 60vw;
+    }
+} */
