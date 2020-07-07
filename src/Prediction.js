@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Prediction.css";
+import "./App.css";
 
 class Prediction extends Component {
     render() {

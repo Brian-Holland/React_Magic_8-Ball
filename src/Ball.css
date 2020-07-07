@@ -1,8 +1,8 @@
 .Ball-container {
     position: relative;
     align-self: center;
-    width: 40%;
-    padding-bottom: 40%;
+    width: 35vw;
+    padding-bottom: 35%;
     background-color: black;
     border-radius: 50%;
     margin-bottom: 3em;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Prediction from "./Prediction";
-import "./Ball.css";
+import "./App.css";
 
 class Ball extends Component {
     static defaultProps = {

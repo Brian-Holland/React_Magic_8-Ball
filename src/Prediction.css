@@ -2,10 +2,10 @@
     position: absolute;
     background-color: #333;
     border-radius: 50%;
-    width: 50%;
-    padding-bottom: 50%;
-    top: 25%;
-    left: 25%;
+    width: 60%;
+    padding-bottom: 60%;
+    top: 20%;
+    left: 20%;
 }
 
 .triangle span {

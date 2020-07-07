@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+.Ball-container {
+    position: relative;
+    align-self: center;
+    width: 35vw;
+    padding-bottom: 35%;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 3em;
+}
+
+.BallShake {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    align-self: center;
+}
+
+.shaking {
+    animation-name: shake;
+    animation-duration: 2s;
+}
+
+.inner-ball {
+    position: absolute;
+    background-color: #333;
+    border-radius: 50%;
+    width: 60%;
+    padding-bottom: 60%;
+    top: 20%;
+    left: 20%;
+}
+
+.triangle span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+}
+
+.triangle {
+    position: absolute;
+    top: 20%;
+    width: auto;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 45%;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+
+.triangle:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #4679bd;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    }
+
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 6deg);
+    }
+
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -6deg);
+    }
+
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    .triangle span {
+        top: 65%;
+        left: 21%;
+    }
+    .Ball-container {
+        width: 90vw;
+        padding-bottom: 90%;
+    }
+}
