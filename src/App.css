@@ -18,6 +18,7 @@
 
 .question {
     align-self: center;
+    margin-top: 2rem;
 }
 
 .shaking {
@@ -112,7 +113,7 @@
 @media (max-width: 600px) {
     .triangle span {
         top: 65%;
-        left: 21%;
+        left: 18%;
     }
     .Ball-container {
         width: 90vw;
