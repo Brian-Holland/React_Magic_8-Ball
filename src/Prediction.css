@@ -9,11 +9,11 @@
 }
 
 .triangle span {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	font-weight: 400;
 	position: absolute;
 	top: 65%;
-	left: 80%;
+	left: 90%;
 	transform: translate(-50%, -50%);
 	margin: 0;
 	color: white;
