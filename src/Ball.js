@@ -37,6 +37,7 @@ class Ball extends Component {
 
 	handleKeyDown(e) {
 		if (e.key === 'Enter') {
+			e.preventDefault();
 			shake();
 		}
 	}
