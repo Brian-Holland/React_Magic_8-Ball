@@ -134,17 +134,18 @@ button {
 	}
 } */
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.triangle span {
 		top: 65%;
-		left: 5rem;
+		left: 50%;
+		font-size: .8rem;
 		font-weight: 300;
 	}
 	.Ball-container {
-		width: 75vw;
-		padding-bottom: 75vw;
+		width: 80vw;
+		padding-bottom: 80vw;
 	}
-} */
+}
 
 /* @media (max-width: 984px) {
     .triangle:after {
