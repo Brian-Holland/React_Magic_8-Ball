@@ -7,9 +7,9 @@ class Ball extends Component {
 		answers: [
 			'As I see it, yes.',
 			'Ask again later.',
-			'Better not tell you now.',
+			'Better not\n tell you now.',
 			'Cannot predict now.',
-			'Concentrate and ask again.',
+			'Concentrate \nand ask again.',
 			'Don’t count on it.',
 			'It is certain.',
 			'It is decidedly so.',
@@ -35,12 +35,6 @@ class Ball extends Component {
 		this.handleKeyDown = this.handleKeyDown.bind(this);
 	}
 
-	handleKeyDown(e) {
-		if (e.key === 'Enter') {
-			shake();
-		}
-	}
-
 	shake() {
 		this.setState({ fade: false });
 
@@ -55,6 +49,12 @@ class Ball extends Component {
 		setTimeout(() => {
 			this.setState({ shaking: false });
 		}, 1000);
+	}
+
+	handleKeyDown(e) {
+		if (e.key === 'Enter') {
+			this.shake();
+		}
 	}
 
 	render() {

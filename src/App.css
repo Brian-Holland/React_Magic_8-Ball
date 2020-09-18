@@ -1,137 +1,149 @@
 body {
-    overflow: hidden;
-    background-color: #fff;
+	overflow: hidden;
+	background-color: #fff;
 }
 
 .Ball-container {
-    position: relative;
-    align-self: center;
-    width: 35vw;
-    padding-bottom: 35vw;
-    background-color: black;
-    border-radius: 50%;
+	position: relative;
+	align-self: center;
+	width: 35vw;
+	padding-bottom: 35vw;
+	background-color: black;
+	border-radius: 50%;
 }
 
 .BallShake {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .question {
-    align-self: center;
-    margin-top: 3rem;
+	align-self: center;
+	margin-top: 3rem;
+}
+
+input[type=text] {
+	padding: 10px;
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+	margin-right: 5px;
+}
+
+button {
+	padding: 10px;
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 .shaking {
-    animation-name: shake;
-    animation-duration: 2s;
+	animation-name: shake;
+	animation-duration: 2s;
 }
 
 .inner-ball {
-    position: absolute;
-    background-color: #333;
-    border-radius: 50%;
-    width: 60%;
-    padding-bottom: 60%;
-    top: 20%;
-    left: 20%;
+	position: absolute;
+	background-color: #333;
+	border-radius: 50%;
+	width: 60%;
+	padding-bottom: 60%;
+	top: 20%;
+	left: 20%;
 }
 
 .triangle span {
-    font-size: 0.9rem;
-    font-weight: 400;
-    position: absolute;
-    top: 60%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: white;
+	text-align: center;
+	font-size: 0.9rem;
+	font-weight: 400;
+	position: absolute;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	color: white;
 }
 
 .triangle {
-    position: absolute;
-    top: 20%;
-    width: auto;
-    height: 0;
-    padding-left: 50%;
-    padding-bottom: 45%;
-    overflow: hidden;
-    opacity: 0;
-    animation: fadein 2s forwards;
+	position: absolute;
+	top: 20%;
+	width: 50%;
+	height: 0;
+	padding-left: 50%;
+	padding-bottom: 45%;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadein 2s forwards;
 }
 
 .triangle:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left: -150px;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 150px solid #4679bd;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left: -150px;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 150px solid #4679bd;
 }
 
 @keyframes fadein {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes shake {
-    from {
-        transform: translate3d(0, 0, 0);
-    }
+	from {
+		transform: translate3d(0, 0, 0);
+	}
 
-    15% {
-        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -10deg);
-    }
+	15% {
+		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -10deg);
+	}
 
-    30% {
-        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 6deg);
-    }
+	30% {
+		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 6deg);
+	}
 
-    45% {
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -6deg);
-    }
+	45% {
+		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -6deg);
+	}
 
-    60% {
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    }
+	60% {
+		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg);
+	}
 
-    75% {
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-    }
+	75% {
+		transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+	}
 
-    to {
-        transform: translate3d(0, 0, 0);
-    }
+	to {
+		transform: translate3d(0, 0, 0);
+	}
 }
 
-@media (max-width: 600px) {
-    .triangle span {
-        top: 65%;
-        left: 40%;
-        font-size: 0.8rem;
-    }
-    .Ball-container {
-        width: 95vw;
-        padding-bottom: 95vw;
-    }
-}
+/* @media (max-width: 600px) {
+	.triangle span {
+		top: 65%;
+		left: 40%;
+		font-size: 0.8rem;
+	}
+	.Ball-container {
+		width: 95vw;
+		padding-bottom: 95vw;
+	}
+} */
 
 /* @media (max-width: 768px) {
-    .triangle span {
-        top: 65%;
-        left: 53%;
-    }
-    .Ball-container {
-        width: 75vw;
-        padding-bottom: 75vw;
-    }
+	.triangle span {
+		top: 65%;
+		left: 5rem;
+		font-weight: 300;
+	}
+	.Ball-container {
+		width: 75vw;
+		padding-bottom: 75vw;
+	}
 } */
 
 /* @media (max-width: 984px) {
