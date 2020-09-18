@@ -32,6 +32,13 @@ class Ball extends Component {
 		super(props);
 		this.state = { answer: '', shaking: false, fade: false };
 		this.shake = this.shake.bind(this);
+		this.handleKeyDown = this.handleKeyDown.bind(this);
+	}
+
+	handleKeyDown(e) {
+		if (e.key === 'Enter') {
+			this.shake();
+		}
 	}
 
 	shake() {
@@ -58,7 +65,7 @@ class Ball extends Component {
 				</div>
 
 				<div className="question">
-					<input type="text" placeholder="Ask a question" onSubmit={this.shake} />
+					<input type="text" placeholder="Ask a question" onKeyDown={this.handleKeyDown} />
 					<button onClick={this.shake} disabled={this.state.shaking}>
 						{this.state.shaking ? 'Shaking...' : 'Shake'}
 					</button>
