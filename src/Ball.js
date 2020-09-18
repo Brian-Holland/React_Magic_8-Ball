@@ -65,7 +65,12 @@ class Ball extends Component {
 				</div>
 
 				<div className="question">
-					<input type="text" placeholder="Ask a question" onKeyDown={this.handleKeyDown} />
+					<input
+						type="text"
+						placeholder="Ask a question"
+						onKeyDown={this.handleKeyDown}
+						disabled={this.state.shaking}
+					/>
 					<button onClick={this.shake} disabled={this.state.shaking}>
 						{this.state.shaking ? 'Shaking...' : 'Shake'}
 					</button>
