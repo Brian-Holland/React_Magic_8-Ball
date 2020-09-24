@@ -1,4 +1,5 @@
 # Magic React 8-Ball
+![](8ball.gif)
 
 ### Description
 
