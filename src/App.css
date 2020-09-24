@@ -40,7 +40,6 @@ button {
 
 .inner-ball {
 	position: absolute;
-	background-color: #333;
 	border-radius: 50%;
 	width: 60%;
 	padding-bottom: 60%;
@@ -69,6 +68,23 @@ button {
 	overflow: hidden;
 	opacity: 0;
 	animation: fadein 2s forwards;
+}
+
+.eight {
+	position: absolute;
+	font-family: 'Electrolize', sans-serif;
+	color: black;
+	font-size: 10rem;
+	top: 17%;
+	left: 30%;
+}
+
+.inner-ball.answered {
+	background-color: #333;
+}
+
+.inner-ball.unanswered {
+	background-color: #fff;
 }
 
 .triangle:after {
@@ -144,6 +160,11 @@ button {
 	.Ball-container {
 		width: 90vw;
 		padding-bottom: 90vw;
+	}
+	.eight {
+		font-size: 7rem;
+		left: 30%;
+		top: 18%;
 	}
 }
 
