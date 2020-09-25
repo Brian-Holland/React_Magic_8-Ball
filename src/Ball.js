@@ -59,21 +59,24 @@ class Ball extends Component {
 
 	render() {
 		return (
-			<div className="BallShake">
-				<div className={`Ball-container ${this.state.shaking && 'shaking'}`}>
-					<Prediction result={this.state.answer} fade={this.state.fade} />
-				</div>
+			<div>
+				<h1>Magic 8-Ball</h1>
+				<div className="BallShake">
+					<div className={`Ball-container ${this.state.shaking && 'shaking'}`}>
+						<Prediction result={this.state.answer} fade={this.state.fade} />
+					</div>
 
-				<div className="question">
-					<input
-						type="text"
-						placeholder="Ask a question"
-						onKeyDown={this.handleKeyDown}
-						disabled={this.state.shaking}
-					/>
-					<button onClick={this.shake} disabled={this.state.shaking}>
-						{this.state.shaking ? 'Shaking...' : 'Shake'}
-					</button>
+					<div className="question">
+						<input
+							type="text"
+							placeholder="Ask a question"
+							onKeyDown={this.handleKeyDown}
+							disabled={this.state.shaking}
+						/>
+						<button onClick={this.shake} disabled={this.state.shaking}>
+							{this.state.shaking ? 'Shaking...' : 'Shake'}
+						</button>
+					</div>
 				</div>
 			</div>
 		);

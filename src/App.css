@@ -1,6 +1,10 @@
 body {
-	overflow: hidden;
 	background-color: #fff;
+}
+
+h1,
+h4 {
+	text-align: center;
 }
 
 .Ball-container {
@@ -19,7 +23,7 @@ body {
 
 .question {
 	align-self: center;
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 }
 
 input[type=text] {
