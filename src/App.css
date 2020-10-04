@@ -152,6 +152,11 @@ button {
 		width: 95vw;
 		padding-bottom: 95vw;
 	}
+	.eight {
+		font-size: .6rem;
+		top: 17%;
+		left: 30%;
+	}
 } */
 
 @media (max-width: 768px) {
@@ -172,7 +177,7 @@ button {
 	}
 }
 
-@media (max-width: 984px) {
+/* @media (max-width: 984px) {
 	.triangle:after {
 		content: "";
 		display: block;
@@ -194,7 +199,7 @@ button {
 
 	.eight {
 		font-size: 10rem;
-		top: 17%;
-		left: 30%;
+		top: 13%;
+		left: 25%;
 	}
-}
+} */
