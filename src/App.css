@@ -159,6 +159,23 @@ button {
 	}
 }
 
+@media (max-width: 414px) {
+	.triangle span {
+		top: 65%;
+		left: 40%;
+		font-size: 0.8rem;
+	}
+	.Ball-container {
+		width: 95vw;
+		padding-bottom: 95vw;
+	}
+	.eight {
+		font-size: .8rem;
+		top: 17%;
+		left: 35%;
+	}
+}
+
 /* @media (max-width: 600px) {
 	.triangle span {
 		top: 65%;
