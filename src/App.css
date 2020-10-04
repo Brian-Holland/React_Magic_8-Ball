@@ -172,23 +172,29 @@ button {
 	}
 }
 
-/* @media (max-width: 984px) {
-    .triangle:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        margin-left: -300px;
-        border-left: 300px solid transparent;
-        border-right: 300px solid transparent;
-        border-bottom: 300px solid #4679bd;
-    }
-    .triangle span {
-        top: 65%;
-        left: 38%;
-    }
-    .Ball-container {
-        width: 60vw;
-        padding-bottom: 60vw;
-    }
-} */
+@media (max-width: 984px) {
+	.triangle:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		margin-left: -300px;
+		border-left: 300px solid transparent;
+		border-right: 300px solid transparent;
+		border-bottom: 300px solid #4679bd;
+	}
+	.triangle span {
+		top: 65%;
+		left: 38%;
+	}
+	.Ball-container {
+		width: 60vw;
+		padding-bottom: 60vw;
+	}
+
+	.eight {
+		font-size: 10rem;
+		top: 17%;
+		left: 30%;
+	}
+}
